@@ -12,9 +12,9 @@ public class Main {
      int[] winningNumbers = {1, 2, 3, 4, 5};
      for (int i=0; i<winningNumbers.length; i++){
          Random ballSet1 = new Random();
-         winningNumbers[i] = 1 + ballSet1.nextInt(50 - 1); // "Array Transversal" - to perform the specified operation
+         winningNumbers[i] = 1 + ballSet1.nextInt(50 - 1); 
      }
-     Collections.shuffle(Arrays.asList(winningNumbers)); //Creates unique random numbers within the array
+     Collections.shuffle(Arrays.asList(winningNumbers)); 
      Random bonusBallSet1 = new Random();
      int bonusBall = bonusBallSet1.nextInt(20);
 
@@ -94,7 +94,7 @@ public class Main {
                 System.out.println(Arrays.toString(playerNumbers) + " " + playerBonusBall);
 
             } else{
-                PlayerNumbers(); //Method is recursive
+                PlayerNumbers();
             }
 
         } else{
